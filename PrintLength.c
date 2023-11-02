@@ -28,6 +28,10 @@ Py_ssize_t len_item(PyObject *Item)
         length = PyUnicode_GET_LENGTH(Number);
         length += (length - 1) / 3 + 3;
     }
+    else {
+        PyObject *Number = PyObject_Str(Item);
+        length = PyUnicode_GET_LENGTH(Number);
+    }
     return length;
 }
 
