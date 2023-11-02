@@ -8,6 +8,10 @@
 
 双击`build.bat`生成pyd文件
 
+## 安装方法
+
+双击`install.bat`安装到python环境
+
 ## 使用方法
 
 ```python

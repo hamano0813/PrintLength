@@ -66,8 +66,8 @@ PyObject *lens(PyObject *self, PyObject *args, PyObject *kwargs)
     return PyLong_FromSize_t(max_length);
 }
 
-const char len_doc[] = "len(item: str|int|float) -> int";
-const char lens_doc[] = "lens(items: list[str|int|float]) -> int";
+const char len_doc[] = "calculate length of CJK characters or Integers and Floats or other Objects.\nlen(item: str | int | float | any) -> int";
+const char lens_doc[] = "calculate a list containing python objects\nlens(items: list[str | int | float | any]) -> int";
 
 static PyMethodDef PrintLengthMethods[] = {
     {"len", (PyCFunction)len, METH_VARARGS | METH_KEYWORDS, len_doc},
